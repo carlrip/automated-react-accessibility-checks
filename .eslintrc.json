@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["@typescript-eslint", "react-hooks", "testing-library", "jsx-a11y"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "block-spacing": ["warn", "always"],
+    "space-before-blocks": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "eol-last": ["error", "always"],
+    "prefer-const": "error",
+    "prettier/prettier": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/prop-types": "off",
+    "testing-library/prefer-user-event": "error"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
